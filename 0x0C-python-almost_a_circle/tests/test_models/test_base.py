@@ -12,14 +12,14 @@ class TestBase(unittest.TestCase):
 
     def test_custom_id (self):
         """ Test for custom id """
-        obj3 = base(id = 10)
+        obj3 = Base(id = 10)
         self.assertEqual(obj3.id, 10)
 
     def test_no_id(self):
         """ Test if there is no id provided """
 
-        obj4 = base()
+        obj4 = Base()
         self.assertEqual(obj4.id, 3)
 
-if __name == '__main__':
+if __name__ == '__main__':
     unittest.main()
